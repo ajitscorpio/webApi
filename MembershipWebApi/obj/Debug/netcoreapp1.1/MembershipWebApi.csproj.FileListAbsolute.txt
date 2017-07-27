@@ -1,9 +1,0 @@
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\bin\Debug\netcoreapp1.1\MembershipWebApi.deps.json
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\bin\Debug\netcoreapp1.1\MembershipWebApi.runtimeconfig.json
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\bin\Debug\netcoreapp1.1\MembershipWebApi.runtimeconfig.dev.json
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\bin\Debug\netcoreapp1.1\MembershipWebApi.dll
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\obj\Debug\netcoreapp1.1\MembershipWebApi.csprojResolveAssemblyReference.cache
-c:\users\asingh\documents\visual studio 2017\Projects\MembershipWebApi\MembershipWebApi\obj\Debug\netcoreapp1.1\MembershipWebApi.AssemblyInfo.cs
-C:\Users\asingh\Documents\Visual Studio 2017\Projects\MembershipWebApi\MembershipWebApi\bin\Debug\netcoreapp1.1\MembershipWebApi.pdb
-C:\Users\asingh\Documents\Visual Studio 2017\Projects\MembershipWebApi\MembershipWebApi\obj\Debug\netcoreapp1.1\MembershipWebApi.dll
-C:\Users\asingh\Documents\Visual Studio 2017\Projects\MembershipWebApi\MembershipWebApi\obj\Debug\netcoreapp1.1\MembershipWebApi.pdb
