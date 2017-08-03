@@ -28,7 +28,7 @@ namespace MembershipWebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            _context.Users.ValidateUser(user);
+           // _context.Users.ValidateUser(user);
         
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }

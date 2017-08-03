@@ -12,9 +12,10 @@ namespace MembershipWebApi.Models
         public Guid UserId { get; set; }
         public Guid state { get; set; }
         public string Token { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public DateTime DeletedAt { get; set; }
+        public bool IsDeleted { get; set; } = false;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public Nullable<DateTime> DeletedAt { get; set; } 
+
     }
 }

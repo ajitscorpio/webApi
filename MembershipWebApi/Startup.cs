@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Cors;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
 using MembershipWebApi.Models;
@@ -39,6 +40,13 @@ namespace MembershipWebApi
             //Data Source = CPO - XPS13 - 2\SQLEXPRESS; Initial Catalog = member_management; Integrated Security = False; User Id = members_dev; Password = test123; MultipleActiveResultSets = True"
             //var connection = @"Server=(localdb)\mssqllocaldb;Database=member_management; Integrated Security = False; User Id = members_dev; Password = test123; MultipleActiveResultSets = True";
             services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Development")));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+            EnableCorsAttribute cors = new EnableCorsAttribute("cors");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +56,9 @@ namespace MembershipWebApi
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UseCors(builder =>
+            builder.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseSwaggerUI(c =>
             {

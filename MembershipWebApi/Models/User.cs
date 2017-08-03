@@ -16,6 +16,9 @@ namespace MembershipWebApi.Models
         public DateTime CreatedAt { get; set; }
         public Nullable<DateTime> DeletedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        
+
+    
     }
+
+
 }
